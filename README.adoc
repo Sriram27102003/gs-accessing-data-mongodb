@@ -235,6 +235,18 @@ Customer[id=51df1b0a3004cb49c50210f9, firstName='Bob', lastName='Smith']
 ----
 ====
 
+== Connecting to a Remote MongoDB Server
+
+If your MongoDB instance is hosted on a different machine or server, you can configure the connection in `application.properties` using:
+
+[source,properties]
+----
+spring.data.mongodb.uri=mongodb://username:password@192.168.1.100:27017/mydatabase
+----
+
+Replace `username`, `password`, `192.168.1.100`, `27017`, and `mydatabase` with your actual values.
+
+
 == Summary
 
 Congratulations! You set up a MongoDB server and wrote a simple application that uses
